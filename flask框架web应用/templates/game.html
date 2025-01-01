@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>2048小游戏</title>
+    <link rel="stylesheet" href="../static/css/game.css">
+</head>
+
+<body>
+    <!--分数-->
+    <p class="header">分数: <span id="score01"></span></p>
+    <a href="../main" id="backButton">返回原页面</a>
+    <!--游戏部分-->
+    <div id="all">
+        <!--第一行-->
+        <div class="cell" id="n00"></div>
+        <div class="cell" id="n01"></div>
+        <div class="cell" id="n02"></div>
+        <div class="cell" id="n03"></div>
+        <!--第二行-->
+        <div class="cell" id="n10"></div>
+        <div class="cell" id="n11"></div>
+        <div class="cell" id="n12"></div>
+        <div class="cell" id="n13"></div>
+        <!--第三行-->
+        <div class="cell" id="n20"></div>
+        <div class="cell" id="n21"></div>
+        <div class="cell" id="n22"></div>
+        <div class="cell" id="n23"></div>
+        <!--第四行-->
+        <div class="cell" id="n30"></div>
+        <div class="cell" id="n31"></div>
+        <div class="cell" id="n32"></div>
+        <div class="cell" id="n33"></div>
+    </div>
+    <!--弹框-->
+    <div id="gameover">
+        <p>
+            游戏结束
+            <br />
+            分数:<span id="score02"></span>
+            <br />
+            <a onclick="typeonce()">再来一次</a>
+        </p>
+    </div>
+
+    <script src="../static/js/game.js"></script>
+</body>
+
+</html>

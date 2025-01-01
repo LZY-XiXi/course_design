@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>夹带私活(手动狗头)</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body style="background-image: url({{ url_for('static', filename='img/' + background) }});">
+
+    <div id="nav">
+        <span class="hiddenmessage" title="纸嫁衣简介">
+            <a href="#" onclick="showContent('纸嫁衣简介')">纸嫁衣简介</a>
+        </span>
+        <span class="hiddenmessage" title="下载地址">
+            <a href="#" onclick="showContent('下载地址')">下载地址</a>
+        </span>
+        <span class="hiddenmessage" title="这里什么也没有">
+            <a href="#" onclick="showContent('这里什么也没有')">这里什么也没有</a>
+        </span>
+    </div>
+
+    <div id="content">
+        <p>欢迎你 用户<b>{{user}}</b></p>
+        <div id="纸嫁衣简介" style="display: none;">
+            <h2>关于纸嫁衣</h2>
+            <p>《纸嫁衣》是由HeartBeat Plus开发的中式恐怖悬疑剧情解谜系列手游,已发行五部,</p>
+            <p>分别为《纸嫁衣》、《纸嫁衣2奘铃村》、《纸嫁衣3鸳鸯债》、《纸嫁衣4红丝缠》和《无间梦境》。</p>
+        </div>
+        <div id="下载地址" style="display: none;">
+            <h2><a href="https://www.gamefps.cn/cn/Phone/index.html" target="_blank">下载地址</a></h2>
+        </div>
+        <div id="这里什么也没有" style="display: none;">
+            <h2><a href="../game">真的什么也没有</a></h2>
+        </div>
+
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>

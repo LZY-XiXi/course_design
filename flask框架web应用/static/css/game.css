@@ -1,0 +1,147 @@
+* {
+    font-family: arial;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('../img/back.png');
+}
+
+.header {
+    width: 480px;
+    font-size: 35px;
+    margin: 60px auto 5px auto;
+}
+
+#score01 {
+    color: #F00;
+}
+
+#all {
+    width: 450px;
+    height: 450px;
+    background-color: #bbada0;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    background-color: #ccc0b3;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color: #fff;
+    float: left;
+    margin: 16px 0px 0px 16px;
+
+}
+
+.n2 {
+    background-color: #eee3da;
+    color: #776e65;
+}
+
+.n4 {
+    background-color: #ede0c8;
+    color: #776e65;
+}
+
+.n8 {
+    background-color: #f2b179;
+}
+
+.n16 {
+    background-color: #f59563;
+}
+
+.n32 {
+    background-color: #f67c5f;
+}
+
+.n64 {
+    background-color: #f65e3b;
+}
+
+.n128 {
+    background-color: #edcf72;
+}
+
+.n256 {
+    background-color: #edcc61;
+}
+
+.n512 {
+    background-color: #9c0;
+}
+
+.n1024 {
+    background-color: #33b5e5;
+    font-size: 40px;
+}
+
+.n2048 {
+    background-color: #09c;
+    font-size: 40px;
+}
+
+.n4096 {
+    background-color: #a6c;
+    font-size: 40px;
+}
+
+.n8192 {
+    background-color: #93c;
+    font-size: 40px;
+}
+
+#gameover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 40px;
+    display: none;
+}
+
+#gameover p {
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    line-height: 66.66px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+#gameover p a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #9f8d77;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#backButton {
+    position: fixed;
+    width: 150px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    background-color: #b19844;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
